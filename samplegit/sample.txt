@@ -1,2 +1,0 @@
-二章の課題なら「sample.txt」を作る
-sample.txt内にテキストを書く&保存
