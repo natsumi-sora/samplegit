@@ -2,6 +2,17 @@
 
 /* work */
 /* 全体ベース・空き調整  */
+body {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 600px;
+        overflow-x: auto;
+    }
+}
+
 .background {
     background-color: #cff1ff;
     width: 100%;
@@ -35,6 +46,11 @@
     margin-top: 6px;
 }
 
+.serect-area {
+    margin-top: 6px;
+}
+
+
 /* フォーム入力部分 */
 .input-area {
 width: 100%;
@@ -49,12 +65,16 @@ border: 1px solid #d9d9d9;
 
 .gender-select {
     padding: 3px 3px 3px 10px;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
 }
 
-.gender-select span {
-    position: relative;
+.subscription-area {
+    margin:  3px 3px 3px 4px;
     display: inline-block;
-    color: #545658;
+    position: relative;
+    margin-left: 10px;
 }
 
 .btn-submit {
@@ -62,15 +82,103 @@ border: 1px solid #d9d9d9;
     background-color: #0170bf;
     color: #fff;
 }
+
  .btn {
     border: 1px solid #d9d9d9;
     font-size: 13px;
     width: 100%;    
 }
 
-.radio {
-    margin-right: 0;
+
+
+
+/*ラジオボタン調整*/
+/*リセット*/
+input[type="radio"] {
+    display: none;
+  }
+
+  .gender-select span {
+    padding: 3px 3px 3px 12px;
+    color: #545658;
+    cursor: pointer;
+  }
+  
+  .gender-select::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-color: #fbfbfb;
+    border: 2px solid #d9d9d9;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  input[type="radio"]:checked + span::before {
+    border-color: #017cbf;
+  }
+
+  input[type="radio"]:checked + span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: #017cbf;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  /*チェックボックス調整*/
+input[type="checkbox"] {
+    display: none;
 }
+
+/* カスタムチェックボックスのスタイル */
+.subscription-label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #464646;
+}
+
+/* チェックボックスの四角いボックスのスタイル */
+.subscription-label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transform: translateY(-50%);
+}
+
+/* チェックされた際のボックス内のスタイル */
+input[type="checkbox"]:checked + .subscription-label::before {
+    border-color: #d9d9d9;
+}
+
+/* チェックマークのスタイル */
+input[type="checkbox"]:checked + .subscription-label::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 6px;
+    width: 6px;
+    height: 13px;
+    border-right: 3px solid #0140bf;
+    border-bottom: 3px solid #0140bf;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+
 
 
 /* テキスト */
@@ -111,4 +219,17 @@ h3 {
 .link-text {
     color: #0170bf;
     text-decoration: none;
+}
+
+/*フォーカス等細かい装飾*/
+.input-area:focus {
+    background-color: #fff;
+    outline: rgba(93, 130, 194, 0.4);
+    box-shadow: 0px 0px 0px 2px rgba(1, 90, 191, 0.1)
+}
+
+.btn-submit:active {
+    background-color: #fff;
+    color: #0170bf;
+    border: 1px solid #d9d9d9;
 }
