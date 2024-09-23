@@ -4,53 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lp-practice</title>
-    <link rel="stylesheet" href="/lp-practice/css/base.css">
-    <link rel="stylesheet" href="/lp-practice/css/reset.css">
-    <link rel="stylesheet" href="/lp-practice/css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   </head>
   <body>
-    <header>
+    <header class="inner">
       <nav>
         <ul>
-          <li class="fas fa-archway fa-3x" href="#"></li>
+          <li><i class="fas fa-archway fa-3x" href="#"></i></li>
           <li><a class="contact-btn" href="#"> Contact</a></li>
         </ul>
     </nav>
     </header>
     
-    <main>
+    <main class="inner">
       <section class="keyvisual">
-        <img src="images/keyvisual/keyvisual.jpg">
-        <h2>WEB PRODUCTION COMPANY</h2>
-        <h4>DIRECTION,CONTENT MARKETING</h4>
+        <img class="keyvisual-image" src="images/keyvisual/keyvisual.jpg">
+        <div class="keyvisual-title">
+          <h2>WEB PRODUCTION COMPANY</h2>
+          <h4>DIRECTION,CONTENT MARKETING</h4>  
+        </div>
       </section>
 
 
-      <section class="news">
+      <section class="news inner">
         <img src="images/news/news.png">
-        <h3>NEWS</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</p>
+        <div class="news-text">
+          <h3>NEWS</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</p>  
+        </div>
       </section>
 
 
-      <section class="skills">
+      <section class="skills inner">
         <div class="inner">
-
+          <h3>WE ARE SKILLS</h3>
+          <div class="skill-images">
+            <img src="images/icons/photo.png">
+            <img src="images/icons/flower.png">
+            <img src="images/icons/data.png">
+            <img src="images/icons/location.png">
+            <img src="images/icons/calender.png">
+            <img src="images/icons/security.png">  
+          </div>
         </div>
       </section>
       
       
-      <section class="plan">
-
+      <section class="plan inner">
+        <h3>SELECT PLAN</h3>
+        <table class="plan-table">
+          <tr><th>PLAN</th><th>BASIC PLAN</th><th>STANDARD PLAN</th><th>ENTERISE PLAN</th></tr>
+          <tr><td>PLICE</td><td>¥100,000</td><td>¥200,000</td><td>¥300,000</td></tr>
+          <tr><td>ANALYSIS</td><td>◯</td><td>◯</td><td>◯</td></tr>
+          <tr><td>IMPROVEMENT</td><td>×</td><td>◯</td><td>◯</td></tr>
+          <tr><td>DESIGN</td><td>×</td><td>×</td><td>◯</td></tr>
+        </table>
       </section>
       
       
-      <nav class="sns">
-
+      <nav class="sns inner">
+       <ul>
+        <li><a class="fab fa-facebook-f" href="#"></a></li>
+        <li><a class="fas fa-comment-dots" href="#"></a></li>
+        <li><a class="fab fa-twitter" href="#"></a></li>
+        <li><a class="fas fa-envelope" href="#"></a></li>
+       </ul>
       </nav>
     </main>
 
-    <footer></footer>
+    <footer class="inner">
+      <P>copyrignce(C)</P>
+    </footer>
   </body>
 </html>

@@ -1,46 +1,128 @@
 @charset "utf-8";
-/*----共通項目-----*/
+/*----共通項目・打ち消し-----*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+} 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .inner {
     width: 1100px;
+}
+h3 {
+    font-size: 40px;
+    letter-spacing: 10px;
 }
 
 /*----header-----*/
 header {
-    height: 30px;
+    height: 80px;
     background-color: #fff;
+    padding: 0 80px;
 }
 .fas {
     margin: 15px 0;
     color: #777;
+    float: left;
 }
 .contact-btn {
-    color: #fff;
-    width: 200px;
+    display: block;
+    width: 100px;
     height: 30px;
+    color: #fff;
     background-color: #6ba7eb;
+    float: right;
 }
 
 
 /*----section キービジュアル-----*/
-
+.keyvisual {
+    display: flex;
+}
+.keyvisual-image {
+    position: relative;
+}
+.keyvisual-title {
+    position: absolute;
+    margin: 400px 0;
+}
+.keyvisual-title h2 {
+    margin-bottom: 30px;
+    font-size:  65px;
+    font-weight: 700;
+    color: #6ba7eb;
+}
+.keyvisual-title h4 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
 
 
 
 /*----section ニュース-----*/
+.news {
+    background-color: #e3f2fd;
+    padding-top: 50px;
+}
+.news img {
+    float: left;
+}
+.news-text {
+    margin: 20px 35px 0 0;
+    font-size: 15px;
+    line-height: 18px;
+    word-break: break-all;
+}
+
 
 
 
 
 /*----section スキル-----*/
-
+.skill-images {
+    display: flex;
+}
 
 
 /*----section プラン-----*/
-
+.plan-table {
+    font-size: 16px;
+    height: 26px;
+    font-weight: bold;
+}
+.plan-table tr {
+    padding: 10px;
+    background-color: #6ba7eb;
+    font-size: 16px;
+    height: 26px;
+    border-left: 2px solid #fff;  
+}
 
 
 /*----section SNS-----*/
-
+.sns {
+    background-color: #e3f2fd;
+    margin: 200px 0;
+}
 
 
 /*----footer-----*/
+footer {
+    width: 100%;
+    background-color: #cfd8dc;
+    padding: 25px 0;
+}
+footer p {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
