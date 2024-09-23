@@ -3,24 +3,27 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     width: 100%;
     margin: auto;
-    text-align: center;
-
 } 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+a {
+    text-decoration: none    
+}
 .inner {
     width: 1100px;
+    text-align: center;
 }
 h3 {
     font-size: 40px;
     letter-spacing: 10px;
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
 
 /*----header-----*/
@@ -29,7 +32,7 @@ header {
     background-color: #fff;
     padding: 0 80px;
 }
-.fas {
+header i {
     margin: 15px 0;
     color: #777;
     float: left;
@@ -47,13 +50,16 @@ header {
 /*----section キービジュアル-----*/
 .keyvisual {
     display: flex;
+    margin: 0 auto;
 }
 .keyvisual-image {
     position: relative;
+    width: 100%;
 }
 .keyvisual-title {
     position: absolute;
-    margin: 400px 0;
+    top: 400px;
+    margin-bottom: 400px;
 }
 .keyvisual-title h2 {
     margin-bottom: 30px;
@@ -72,13 +78,15 @@ header {
 /*----section ニュース-----*/
 .news {
     background-color: #e3f2fd;
-    padding-top: 50px;
+    padding: 50px 80px 50px 80px;
 }
 .news img {
     float: left;
+    width: 250px;
+    background-size: cover;
 }
 .news-text {
-    margin: 20px 35px 0 0;
+    width: 60%;
     font-size: 15px;
     line-height: 18px;
     word-break: break-all;
@@ -91,6 +99,8 @@ header {
 /*----section スキル-----*/
 .skill-images {
     display: flex;
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -111,18 +121,30 @@ header {
 
 /*----section SNS-----*/
 .sns {
+    width: 100%;
     background-color: #e3f2fd;
-    margin: 200px 0;
+    padding: 200px 80px;
 }
-
+.sns ul {
+    display: flex;
+    justify-content: center;
+}
+.sns a {
+    width: 185px;
+    font-size: 40px;
+    padding: 25px 0;
+    color: #8c8c8c;
+    overflow:hidden
+}
 
 /*----footer-----*/
 footer {
     width: 100%;
     background-color: #cfd8dc;
-    padding: 25px 0;
+    padding: 25px 80px;
 }
 footer p {
     font-size: 13px;
     letter-spacing: 0.5px;
+    text-align: right;
 }
