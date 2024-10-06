@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*----共通項目・打ち消し-----*/
 body {
-    width: 100%;
+    width:100%;
     text-align: center;
     justify-content: center;
 } 
@@ -28,15 +28,13 @@ section .inner {
 h3 {
     font-size: 40px;
     letter-spacing: 10px;
-    margin-top: 20px;
-    margin-bottom: 35px;
 }
 
 
 /*----header-----*/
 header {    
     height: 80px;
-    background-color: #fff;
+    background-color:#fff;
 }
 nav ul {
     display: flex;
@@ -46,7 +44,6 @@ nav ul {
 header i {
     margin: 15px 0;
     color: #777;
-    padding-left: 80px;
 }
 header a {
     display: inline-block;
@@ -56,20 +53,23 @@ header a {
     color: #fff;
     background-color: #6ba7eb;
 }
-.contact-btn {
-    margin-right: 80px;
+
+header a:hover {
+    transition: all 0.3s;
+    background-color: #333;
 }
 
 /*----section キービジュアル-----*/
 .keyvisual-image {
     width: 100%;
-    position: relative;
 }
+
 .keyvisual-title {
     position: absolute;
     top: 400px;
     margin-bottom: 400px;
     padding: 0 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     
 }
 .keyvisual-title h2 {
@@ -87,15 +87,15 @@ header a {
 /*----section ニュース-----*/
 .news {
     background-color: #e3f2fd;
-    padding: 50px 0;
+    padding-top: 50px;
     justify-content: center;
 }
 
 
 .left-colam {
     flex: 4;
-    margin-right: 50px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -112,12 +112,12 @@ header a {
 .right-colam h3 {
     font-size: 40px;
     letter-spacing: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .news-text {
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 18px;
     word-break: break-all;
 }
 
@@ -125,8 +125,8 @@ header a {
 
 /*----section スキル-----*/
 .skills {
-    display: block;
     background-color: #fff;
+    padding: 50px 0;
 }
 .skills ul {
     display: flex;
@@ -145,6 +145,9 @@ header a {
     margin-right: 0;
 }
 
+.skill-images img:hover {
+    opacity: 1.0;
+}
 
 
 
@@ -166,11 +169,23 @@ header a {
     vertical-align: middle;
 }
 
-.plan-table thead {
+tr,td,th {
     padding: 10px;
-    background-color: #6ba7eb;
-    border-left: 2px solid #fff;
 }
+
+.plan-table thead {
+    background-color: #6ba7eb;
+}
+
+td:nth-child(2), 
+td:nth-child(3), 
+td:nth-child(4), 
+th:nth-child(2), 
+th:nth-child(3), 
+th:nth-child(4) {
+   border-left: 2px solid #fff;
+}
+
 
 tbody td:nth-child(1) {
     font-weight: bold;
@@ -194,9 +209,14 @@ tbody tr:nth-child(even) {
 .sns a {
     width: 185px;
     font-size: 40px;
-    padding: 25px 40px;
+    padding: 25px 0;
     color: #8c8c8c;
     overflow:hidden
+}
+
+.sns a:hover {
+    transition: all 0.5s;
+    color: #fff;
 }
 
 /*----footer-----*/
