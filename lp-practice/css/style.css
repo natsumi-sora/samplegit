@@ -60,10 +60,13 @@ header a:hover {
 }
 
 /*----section キービジュアル-----*/
-.keyvisual-image {
-    width: 100%;
+.keyvisual {
+    height: 1000px;
+    background-image: url('../images/keyvisual/keyvisual.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-
 .keyvisual-title {
     position: absolute;
     top: 400px;
@@ -131,7 +134,7 @@ header a:hover {
 .skills ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 }
 .skill-images img {
     width: 300px;
